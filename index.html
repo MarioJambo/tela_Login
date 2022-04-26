@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário-simples</title>
+</head>
+
+<style>
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: 0;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+background: #2BC0E4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+
+}
+.form{
+background:darkgoldenrod;
+width: 50%;
+height: 70%;
+margin: 0% auto;
+text-align: center;
+border: 2px solid dodgerblue;
+border-radius: 10px;
+margin-top: 50px;
+
+}
+h1{
+    
+    background-color: #2BC0E4;
+
+}
+input,select{
+
+    
+border-radius: 10px;
+height: 30px;
+border: none;
+
+}
+input[type="submit"]{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    
+    
+}
+
+input[type="button"]{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    
+    
+}
+input[type="submit"]:hover{
+    background: #2BC0E4;
+    color: #EAECC6;
+    transition: 1.5 s;
+    
+}
+
+input[type="button"]:hover{
+    background: #2BC0E4;
+    color: #EAECC6;
+    
+}
+
+</style>
+<body>
+    
+    <div class="form">
+        <form  method="post" action="index.php"><br>
+            
+<!--inicio Parte 1: Dados pessoais -->
+            <h1>Sistemas de clientes </h1><br>
+            <h2>Cadastro</h2><br><br>
+            <label for="nome" >Nome: </label>
+            <input type="text" size="40" placeholder="nome completo: " ><br><br>
+            <label for="codigo postal">Código postal</label>
+            <input type="text" size="40" placeholder="10-11" ><br><br>
+            <label for="email">Email:</label>
+            <input type="text" size="40" placeholder="fulano@citranomail.com"><br><br>
+            <label for="altura">altura: </label>
+            <input type="number" size="40" placeholder="(ex: 191)" >
+            <br><br>
+            <label for="sexo">Sexo:</label>&nbsp;<br>
+            <label for="masc">masculino</label>
+            <input type="radio" name="masc" id="masculino" >
+            <label for="fem">femenino</label>
+            <input type="radio" name="fem" id="femenino">
+            <br>
+            <label for="data">Data de nascimento: </label>
+            <input type="date" size="40" >
+            <br><br>
+<!-- Fim da Parte 1: Dados pessoais -->
+
+<!-- inicio da Parte 2: Endereço  -->
+             <h2>Endereço</h2><br><br>
+             <label for="prv">provincia</label>
+             <select name="provincia" id="prv"> 
+                 <option value="0">Escolha a sua região :</option>
+                <optgroup label="Maputo">
+                    <option value="1">Cidade</option>
+                    <option value="2">zimpeto</option>
+                    <option value="3">Matola</option>
+                </optgroup>
+
+                <optgroup label="Beira">
+                    <option value="4">Baixa</option>
+                    <option value="6">manga</option>
+                    <option value="7">Matacuane</option>
+                </optgroup>
+                <optgroup label="Nampula">
+                    <option value="8">Muhala expansão</option>
+                    <option value="9">Muhaivire expansão</option>
+                    <option value="10">Namicopo</option>
+                    <br>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" size="40" placeholder="bairro xyz"><br><br>
+                    <label for="rua">Rua:</label>
+                    <input type="text" size="30" placeholder="rua xyz">
+                    <label for="nu">Casa Numero:</label>
+                    <input type="text" size="5" placeholder="000-333"><br><br>
+
+<!-- botões section -->
+
+                    <input type="submit" value="Enviar">&nbsp;&nbsp;
+                    <input type="submit" value="voltar "></input>
+
+
+
+
+                </optgroup>
+               
+                </select>
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>
